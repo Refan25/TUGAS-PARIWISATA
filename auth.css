@@ -1,0 +1,158 @@
+/* =========================================
+   GLOBAL AUTH PAGE STYLING
+   Login & Register – Backend Style Version
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* =========================================
+   BODY + BACKGROUND IMAGE
+   ========================================= */
+body {
+    min-height: 100vh;
+    background-image: url("../img/background1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DARK OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+}
+
+/* =========================================
+   AUTH CONTAINER
+   ========================================= */
+.auth-container {
+    width: 420px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================
+   TITLE
+   ========================================= */
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+/* INPUT */
+.auth-container input {
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.auth-container input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+/* =========================================
+   BUTTON
+   ========================================= */
+.auth-container button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #007bff;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.auth-container button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   MESSAGE BOX
+   ========================================= */
+.error {
+    background: #ffe1e1;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.success {
+    background: #e6ffed;
+    color: #1b5e20;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   REDIRECT LINK
+   ========================================= */
+.redirect-text {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.redirect-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.redirect-text a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 480px) {
+    .auth-container {
+        width: 90%;
+        padding: 25px;
+    }
+}

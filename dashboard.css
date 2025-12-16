@@ -1,0 +1,244 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f1f3f4;
+  color: #202124;
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+.sidebar {
+  width: 240px;
+  background: #1a73e8;
+  color: #fff;
+  padding: 22px;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 14px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+.main {
+  flex: 1;
+  padding: 26px;
+}
+
+/* ===============================
+   TOPBAR
+================================ */
+.topbar {
+  background: #fff;
+  padding: 14px 22px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 26px;
+}
+
+.topbar input {
+  width: 260px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: 1px solid #dadce0;
+  outline: none;
+}
+
+.topbar input:focus {
+  border-color: #1a73e8;
+}
+
+.admin {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ===============================
+   DASHBOARD BOX
+================================ */
+.dashboard-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.box {
+  background: #fff;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.box h4 {
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.box p {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: #1a73e8;
+}
+
+/* ===============================
+   TABLE STYLE (WISATA & KATEGORI)
+================================ */
+.table-box {
+  background: #fff;
+  margin-top: 28px;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  text-align: left;
+  font-size: 13px;
+  padding: 12px;
+  color: #5f6368;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table td {
+  padding: 14px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+table tr:hover {
+  background: #f8f9fa;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.btn-warning {
+  background: #fbbc04;
+  color: #202124;
+}
+
+.btn-danger {
+  background: #ea4335;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1558b0;
+}
+
+.btn-warning:hover {
+  background: #e2a800;
+}
+
+.btn-danger:hover {
+  background: #c5221f;
+}
+
+/* ===============================
+   FORM
+================================ */
+.form-box {
+  background: #fff;
+  padding: 26px;
+  border-radius: 16px;
+  max-width: 520px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.form-box label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #dadce0;
+}
+
+.form-box button {
+  margin-top: 18px;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #5f6368;
+}
